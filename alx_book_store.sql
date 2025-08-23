@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Authors (
 CREATE TABLE IF NOT EXISTS Customers (
     customer_id INT NOT NULL AUTO_INCREMENT,
     customer_name INT NOT NULL,
-    Email VARCHAR(215) UNIQUE,
+    email VARCHAR(215) UNIQUE,
     address TEXT,
     PRIMARY KEY (customer_id)
 );
