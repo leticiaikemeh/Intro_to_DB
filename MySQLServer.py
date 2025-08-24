@@ -1,6 +1,5 @@
 import mysql.connector
 from getpass import getpass
-from mysql.connector import Error
 
 try:
     with  mysql.connector.connect(
@@ -15,5 +14,5 @@ try:
                  )
              print("Database 'alx_book_store' created successfuly!")
 
-except Error as e:
+except mysql.connector.Error as e:
     print(e)
