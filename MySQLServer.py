@@ -1,8 +1,9 @@
+import mysql.connector
 from getpass import getpass
-from mysql.connector import connect, Error
+from mysql.connector import Error
 
 try:
-    with connect(
+    with  mysql.connector.connect(
         host="localhost",
         user=input("Enter username: "),
         password=getpass("Enter password: "),
